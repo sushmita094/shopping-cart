@@ -1,0 +1,39 @@
+{
+  "DressDetails": [
+    {
+      "name": "Little Black Dress",
+      "price": "2000",
+      "language": "English"
+    },
+    {
+      "name": "Blue Cocktail Gown",
+      "price": "1000",
+      "language": "Hindi"
+    },
+    {
+      "name": "Red Dress",
+      "price": "2500",
+      "language": "English"
+    },
+    {
+      "name": "Green Chiffon Gown",
+      "price": "1500",
+      "language": "Hindi"
+    },
+    {
+      "name": "White Wedding Gown",
+      "price": "2000",
+      "language": "Hindi"
+    },
+    {
+      "name": "Pink Silk Dress",
+      "price": "2500",
+      "language": "Hindi"
+    },
+    {
+      "name": "Purple Silk Dress",
+      "price": "1000",
+      "language": "Hindi"
+    }
+  ]
+}
