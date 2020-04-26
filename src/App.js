@@ -51,31 +51,16 @@ class App extends React.Component {
     }
   };
 
-  // handleButtonClick = (index) => {
-  //   let x = index;
-
-  // };
-
   render() {
-    const numbers = [1, 2, 3, 4, 5];
-
-    const anotherNumbers = [
-      { name: "one" },
-      { name: "two" },
-      { name: "three" },
-      { name: "four" },
-    ];
-
     return (
       <div className="App">
         <div className="container">
-          <div>
+          <div className="d-flex justify-content-between">
             <Filters onFilterChange={this.handleFilterChange} />
             <SearchYear onSearchChange={this.handleSearchChange} />
           </div>
           <div className="row">
             <div className="col-md-9">
-              {/* <MovieCard onAddCart={this.handleAddCart} dressData={dressData} /> */}
               <MovieCard dressData={dressData} onAddCart={this.handleAddCart} />
             </div>
             <div className="col-md-3">

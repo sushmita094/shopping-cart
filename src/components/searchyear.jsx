@@ -5,7 +5,7 @@ const SearchYear = ({ onSearchChange }) => {
     <div>
       <form className="form-inline">
         <div className="form-group mx-sm-3 mb-2">
-          <label htmlFor="inputyear">Search Year</label>
+          <label htmlFor="inputyear">Search by Price</label>
           <input
             type="text"
             className="form-control"
