@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import MovieCard from "./components/moviecard";
+import DressCard from "./components/dresscard";
 import Filters from "./components/filters";
 import SearchYear from "./components/searchyear";
 import Cart from "./components/cart";
@@ -12,19 +12,31 @@ class App extends React.Component {
   state = {
     value: "Any",
     price: "Any",
-    itemsInCartVar: [],
+    dressesInCart: [],
   };
 
-  handleAddCart = (index) => {
-    let item = dressData.filter((c) => dressData.indexOf(c) === index);
-    this.itemsInCart(item);
-  };
-
-  itemsInCart = (item) => {
-    let myVar = [...this.state.itemsInCartVar];
-    myVar.push(item);
+  handleAddCart = (dress) => {
+    let dressesInCart = [...this.state.dressesInCart];
+    if (dressesInCart.some((item) => item.name === dress.name)) {
+    } else {
+      dressesInCart.push(dress);
+    }
     this.setState({
-      itemsInCartVar: myVar,
+      dressesInCart,
+    });
+  };
+
+  handleDeleteCart = (dress) => {
+    let dressesInCart = [...this.state.dressesInCart];
+    dressesInCart = dressesInCart.filter((m) => m.name !== dress.name);
+    this.setState({
+      dressesInCart,
+    });
+  };
+
+  handleResetCart = () => {
+    this.setState({
+      dressesInCart: [],
     });
   };
 
@@ -61,10 +73,14 @@ class App extends React.Component {
           </div>
           <div className="row">
             <div className="col-md-9">
-              <MovieCard dressData={dressData} onAddCart={this.handleAddCart} />
+              <DressCard dressData={dressData} onAddCart={this.handleAddCart} />
             </div>
             <div className="col-md-3">
-              <Cart itemsInCart={this.state.itemsInCartVar} />
+              <Cart
+                dressesInCart={this.state.dressesInCart}
+                onDeleteCart={this.handleDeleteCart}
+                onResetCart={this.handleResetCart}
+              />
             </div>
           </div>
         </div>

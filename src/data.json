@@ -2,38 +2,43 @@
   "DressDetails": [
     {
       "name": "Little Black Dress",
-      "price": "2000",
-      "language": "English"
+      "price": "2000"
+    },
+    {
+      "name": "Floral Print Dress",
+      "price": "3000"
+    },
+    {
+      "name": "Belted Dress",
+      "price": "1500"
+    },
+    {
+      "name": "Printed Dress",
+      "price": "2500"
     },
     {
       "name": "Blue Cocktail Gown",
-      "price": "1000",
-      "language": "Hindi"
+      "price": "1000"
     },
     {
       "name": "Red Dress",
-      "price": "2500",
-      "language": "English"
+      "price": "2500"
     },
     {
       "name": "Green Chiffon Gown",
-      "price": "1500",
-      "language": "Hindi"
+      "price": "1500"
     },
     {
       "name": "White Wedding Gown",
-      "price": "2000",
-      "language": "Hindi"
+      "price": "2000"
     },
     {
       "name": "Pink Silk Dress",
-      "price": "2500",
-      "language": "Hindi"
+      "price": "2500"
     },
     {
       "name": "Purple Silk Dress",
-      "price": "1000",
-      "language": "Hindi"
+      "price": "1000"
     }
   ]
 }
