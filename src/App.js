@@ -1,10 +1,10 @@
 import React from "react";
-import "./App.css";
 import DressCard from "./components/dresscard";
 import Filters from "./components/filters";
 import SearchYear from "./components/searchyear";
 import Cart from "./components/cart";
 import data from "./data.json";
+import "./styles/App.scss";
 
 let dressData = data.DressDetails;
 

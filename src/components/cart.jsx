@@ -1,11 +1,14 @@
 import React from "react";
+import Button from "./button";
 
 const Cart = ({ dressesInCart, onDeleteCart, onResetCart }) => {
   return (
     <div>
-      <button className="btn btn-primary" onClick={onResetCart}>
-        Reset Cart
-      </button>
+      <Button
+        buttonClasses="btn btn-primary"
+        handleClick={onResetCart}
+        buttonText="Reset Cart"
+      />
       <p>
         Items in your cart
         <span className="badge badge-primary">{dressesInCart.length}</span>
@@ -15,12 +18,11 @@ const Cart = ({ dressesInCart, onDeleteCart, onResetCart }) => {
           <div className="card-body">
             <p>{item.name}</p>
             <p>{item.price}</p>
-            <button
-              className="btn btn-danger btn-sm"
-              onClick={() => onDeleteCart(item)}
-            >
-              Delete
-            </button>
+            <Button
+              buttonClasses="btn btn-danger btn-sm"
+              handleClick={() => onDeleteCart(item)}
+              buttonText="Delete"
+            />
           </div>
         </div>
       ))}

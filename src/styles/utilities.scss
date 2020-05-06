@@ -1,0 +1,55 @@
+$skin: #e18a67;
+$white: #fbf8f6;
+$peach: #facea8;
+$orange: #f1642b;
+$black: #251e21;
+$brown: #c9ad9f;
+$gray: #837ca2;
+
+.App {
+  padding-top: 20px;
+  color: $black;
+  background-color: $white;
+}
+// buttons
+
+button {
+  border: none;
+}
+
+.btn--primary {
+  background-color: rgba($black, 0.9);
+  color: white;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 5px;
+  line-height: 1.3;
+}
+
+.btn--orange {
+  background-color: rgba($orange, 0.9);
+  color: white;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 5px;
+  line-height: 1.3;
+}
+
+// dress card
+.dress-card {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 2px 2px 5px 4px rgba($skin, 0.05);
+  border-radius: 5px;
+
+  .name {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .price {
+    color: rgba($black, 0.6);
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
